@@ -9,4 +9,7 @@ while index < len(user_input) and user_input[index] == ' ':
     index +=1
 
 # slice the string from the first non-space character
+sliced_string = user_input[index:]
+
 # print
+print(sliced_string)
