@@ -4,11 +4,13 @@
 user_input = input("Enter a word: ")
 
 # split input into words
-words = text.split()
+words = user_input.split()
 result = ""
 
-# loop each word
-# capitalize first letter
-# rest to lowercase
-# remove the extra space
+for word in words: # loop each word
+    first_char = word[0].upper() if word else ""    # capitalize first letter
+    rest = word[1:].lower() if len(word) > 1 else "" # convert the rest to lowercase
+    result += first_char + rest + " " # combine and add a space 
+
 # print
+print(result.strip())
