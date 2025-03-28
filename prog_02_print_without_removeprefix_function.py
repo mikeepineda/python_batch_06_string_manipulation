@@ -2,6 +2,9 @@
 
 # ask for user's input
 # ask the user what prefix to removed
+user_input = input("Enter your word: ")
+prefix = input("Enter a prefix to be removed: ")
+
 # check if the user's input starts with a prefix
 # remove the prefix by slicing
 # print
