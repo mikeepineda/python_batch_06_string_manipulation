@@ -14,4 +14,4 @@ if len(user_input) < width:
     user_input = " " * left_spaces + user_input + " " * right_spaces
 
 # print display
-print("Result:", user_input)
+print(user_input)
