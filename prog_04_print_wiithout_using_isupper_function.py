@@ -12,5 +12,7 @@ def custom_isupper(user_input):
     return True
 
 # check if the input is uppercase
-# display result
-  
+if custom_isupper(user_input):
+    print("All characters are uppercase.") # display result
+else: 
+    print("Not all characters are uppercase.")  
