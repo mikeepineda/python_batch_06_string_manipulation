@@ -9,8 +9,8 @@ suffix = input("Enter your suffix: ")
 # check if the end of text matches the suffix
 # extract the last part of the input using slicing
 # compare with suffix
-# store the result
-result = text[-len(suffix):] == suffix
-
 # print display
-print("Ends with suffix", result)
+if user_input[-len(suffix):] == suffix:
+    print("The string ends with the given suffix.")
+else:
+    print("The string does NOT end with the given suffix.")
