@@ -3,8 +3,12 @@
 # ask for user input
 user_input = input("Enter a word: ")
 
-# check if its not empty
-# convert first char into uppercase
-# convert the rest to lowercase
-# combine
+if user_input: # check if its not empty
+     first_char = user_input[0].upper() # convert first char into uppercase
+     rest = user_input[1:].lower() # convert the rest to lowercase
+     result = first_char + rest # combine
+else: 
+     result = ""
+
 # display
+print(result)
