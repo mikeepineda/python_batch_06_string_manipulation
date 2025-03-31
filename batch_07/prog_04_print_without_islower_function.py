@@ -11,5 +11,8 @@ def custom_islower(user_input):
 # else return true
     return True
 
-# check if the input is uppercase
-# display result
+# check if the input is lowercase
+if custom_islower(user_input):
+    print("All characters are lowercase.") # display result
+else: 
+    print("Not all characters are lowercase.")  
