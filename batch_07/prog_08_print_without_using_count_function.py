@@ -11,5 +11,12 @@ def custom_count(string, substring):
     index = 0
 
 # create loop
+    while index <= len(string) - len(substring):  # Loop through string
+        if string[index:index + len(substring)] == substring:  # Match found
+            count += 1
+        index += 1  # Move to the next character
+
+    return count
 
 # print
+print(f"'{substring}' appears {custom_count(user_input, substring)} times in '{user_input}'.")
