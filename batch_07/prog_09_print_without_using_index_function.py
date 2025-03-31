@@ -9,4 +9,11 @@ def custom_index(string, substring):    # def custom index
             return i  # return the first found index
     return -1 
 
+index = custom_index(user_input, substring)
+
 # print
+
+if index != -1:
+    print(f"'{substring}' found at index {index} in '{user_input}'.")
+else:
+    print(f"'{substring}' not found in '{user_input}'.")
