@@ -1,18 +1,12 @@
-# Prog01. lstrip() remove the space characters at the beginning of the string. Create a program that do the same functionality without using lstrip() function.
+# Prog01. rstrip() remove the space characters at the end of the string. Create a program that do the same functionality without using rstrip() function.
+
 
 # ask for user's input
-text = input("Enter a word: ")
+user_input = input("Enter a word that ends with spaces: ")
 
-# initialize i to zero
 # create loop
+while user_input.endswith(" "):
+    user_input = user_input[:-1]
 
-def remove_leading_spaces(s): 
-    i = 0
-    while i < len(s) and s[i] == ' ':
-        i += 1
-    return s[i:]
-
-result = remove_leading_spaces(text)
-
-# print result
-print(result)
+# print 
+print(f"'{user_input}'") 
